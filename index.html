@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>DemoFacebook</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>SellViaViet</a>
+        <nav class="navbar">
+            <a href="#home">Trang Chủ</a>
+            <a href="#features">Via Việt</a>
+            <a href="#products">Clone Việt</a>
+            <a href="#category">Hotmail</a>
+            <a href="#review">Hổ trợ</a>
+            <a href="#blogs">Liên hệ </a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn" ></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./img/clone-viet.png" alt="">
+                <div class="content">
+                    <h3>Demo-1</h3>
+                    <span class="price">50,000đ</span>
+                    <span class="quantity">qty: 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./img/clone-viet.png" alt="">
+                <div class="content">
+                    <h3>Demo-1</h3>
+                    <span class="price">50,000đ</span>
+                    <span class="quantity">qty: 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./img/clone-viet.png" alt="">
+                <div class="content">
+                    <h3>Demo-1</h3>
+                    <span class="price">50,000đ</span>
+                    <span class="quantity">qty: 1</span>
+                </div>
+            </div>
+            <div class="total">total: 150,000đ</div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+        <form action="" class="login-form">
+            <h3>Đăng nhập</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">Click here</a></p>
+            <p>don't have an account <a href="#">Create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+    </header>    
+
+    <!-- home -->
+     <section class="home" id="home">
+        <div class="content">
+            <h3>Shop bán  <span>Tài Khoản</span> Facebook</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum ullam saepe distinctio dolorum tempora sed. Cupiditate obcaecati rerum temporibus enim iure, odit fugiat maxime impedit laborum quibusdam qui quo!</p>
+            <a href="#" class="btn">Mua ngay</a>
+        </div>
+     </section>
+    <section class="features" id="features">
+        <h1 class="heading">Hàng đang<span>bán chạy</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="./img/Product-icon.png" alt="">
+                <h3>Via Việt Spam</h3>
+                <p>Đã qua CP phone , 282 , Live ads</p>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+            <div class="box">
+                <img src="./img/Product-icon.png" alt="">
+                <h3>Via Việt Spam</h3>
+                <p>Đã qua CP phone , 282 , Live ads</p>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+            <div class="box">
+                <img src="./img/Product-icon.png" alt="">
+                <h3>Via Việt Spam</h3>
+                <p>Đã qua CP phone , 282 , Live ads</p>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Product demo -->
+    <section class="products" id="products">
+        <h1 class="heading">Hàng  Via<span>Việt Spam</span></h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./img/product-demo.png" alt="">
+                    <h3>Via Việt</h3>
+                    <div class="price">15,000đ</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/product-demo.png" alt="">
+                    <h3>Via Việt</h3>
+                    <div class="price">15,000đ</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/product-demo.png" alt="">
+                    <h3>Via Việt</h3>
+                    <div class="price">15,000đ</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/product-demo.png" alt="">
+                    <h3>Via Việt</h3>
+                    <div class="price">15,000đ</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./img/product-demo.png" alt="">
+                    <h3>Via Việt</h3>
+                    <div class="price">15,000đ</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/product-demo.png" alt="">
+                    <h3>Via Việt</h3>
+                    <div class="price">15,000đ</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/product-demo.png" alt="">
+                    <h3>Via Việt</h3>
+                    <div class="price">15,000đ</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/product-demo.png" alt="">
+                    <h3>Via Việt</h3>
+                    <div class="price">15,000đ</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Category -->
+    <section class="categories" id="categories">
+        <h1 class="heading">Hàng Clone <span>Việt</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <h3>Clone Việt</h3>
+                <p>Giảm 50% nạp lần đầu</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <h3>Clone Việt</h3>
+                <p>Giảm 50% nạp lần đầu</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <h3>Clone Việt</h3>
+                <p>Giảm 50% nạp lần đầu</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <h3>Clone Việt</h3>
+                <p>Giảm 50% nạp lần đầu</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <h3>Clone Việt</h3>
+                <p>Giảm 50% nạp lần đầu</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <h3>Clone Việt</h3>
+                <p>Giảm 50% nạp lần đầu</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <h3>Clone Việt</h3>
+                <p>Giảm 50% nạp lần đầu</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <h3>Clone Việt</h3>
+                <p>Giảm 50% nạp lần đầu</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <h3>Clone Việt</h3>
+                <p>Giảm 50% nạp lần đầu</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <h3>Clone Việt</h3>
+                <p>Giảm 50% nạp lần đầu</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+        </div>
+    </section>
+    <!-- review custom -->
+     <section class="review" id="review">
+        <h1 class="heading">Đánh giá của <span>Khánh hàng</span></h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./img/user.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi dolor harum excepturi tempore? Voluptatem, nihil. Pariatur, ab sint facilis qui esse animi obcaecati sed a temporibus dolores dolorem nemo.</p>
+                    <h3>Minh Quân</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/user.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi dolor harum excepturi tempore? Voluptatem, nihil. Pariatur, ab sint facilis qui esse animi obcaecati sed a temporibus dolores dolorem nemo.</p>
+                    <h3>Minh Quân</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/user.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi dolor harum excepturi tempore? Voluptatem, nihil. Pariatur, ab sint facilis qui esse animi obcaecati sed a temporibus dolores dolorem nemo.</p>
+                    <h3>Minh Quân</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/user.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi dolor harum excepturi tempore? Voluptatem, nihil. Pariatur, ab sint facilis qui esse animi obcaecati sed a temporibus dolores dolorem nemo.</p>
+                    <h3>Minh Quân</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/user.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi dolor harum excepturi tempore? Voluptatem, nihil. Pariatur, ab sint facilis qui esse animi obcaecati sed a temporibus dolores dolorem nemo.</p>
+                    <h3>Minh Quân</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/user.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi dolor harum excepturi tempore? Voluptatem, nihil. Pariatur, ab sint facilis qui esse animi obcaecati sed a temporibus dolores dolorem nemo.</p>
+                    <h3>Minh Quân</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- blog -->
+     <section class="blogs" id="blog">
+        <h1 class="heading">Xem <span>Blog</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i>by user</a>
+                        <a href="#"><i class="fas fa-calendar"></i>29/10/2024</a>
+                    </div>
+                    <h3>Xem sản phẩm bán chạy nhất ở chúng tôi</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, sequi nisi sed ut maiores dolores, delectus odio beatae dolorum provident corrupti, ducimus temporibus commodi esse ab assumenda. Sunt, cumque iste.</p>
+                    <a href="#" class="btn">Xem thêm</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i>by user</a>
+                        <a href="#"><i class="fas fa-calendar"></i>29/10/2024</a>
+                    </div>
+                    <h3>Xem sản phẩm bán chạy nhất ở chúng tôi</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, sequi nisi sed ut maiores dolores, delectus odio beatae dolorum provident corrupti, ducimus temporibus commodi esse ab assumenda. Sunt, cumque iste.</p>
+                    <a href="#" class="btn">Xem thêm</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/clone-viet.png" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i>by user</a>
+                        <a href="#"><i class="fas fa-calendar"></i>29/10/2024</a>
+                    </div>
+                    <h3>Xem sản phẩm bán chạy nhất ở chúng tôi</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, sequi nisi sed ut maiores dolores, delectus odio beatae dolorum provident corrupti, ducimus temporibus commodi esse ab assumenda. Sunt, cumque iste.</p>
+                    <a href="#" class="btn">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- footer -->
+      <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>SellViaViet <i class="fas fa-shopping-basket"></i></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eos officiis fugit voluptates eligendi harum ex aut dolorum ipsam. Soluta exercitationem obcaecati quae accusantium sunt eligendi modi excepturi quo expedita.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Contact info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i>0948.773.047</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i>quanlibomedia@gmail.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i>Thủ Dầu Một - Bình Dương - Việt Nam</a>
+            </div>
+            <div class="box">
+                <h3>Quicks Link</h3>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Via Việt</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Clone Việt</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Hotmail</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>Hổ trợ</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>contact</a>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Đăng ký sau thời gian update</p>
+                <input type="email" placeholder="your mail" class="mail">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="./img/banking.jpg" class="payment-img" alt="">
+                
+            </div>
+
+        </div>
+        <div class="credit">Created by <span>Minh Quân fullStack</span> | all right resserved</div>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
